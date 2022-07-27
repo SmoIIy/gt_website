@@ -1,0 +1,24 @@
+.header {
+    text-align: center;
+}
+
+.leftbox {
+    text-align: left;
+    border: 5px black;
+    background-color: blue;
+    max-width: 365px;
+    height: 600px;
+}
+
+.rightbox {
+    text-align: right;
+    max-width: 365px;
+    background-color: red;
+    height: 600px;
+}
+
+.middlebox {
+    text-align: center;
+    max-width: 365px;
+    height: 90%;
+}
