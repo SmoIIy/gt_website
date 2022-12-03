@@ -36,3 +36,21 @@ function traening() {
     document.getElementById("nej").innerHTML = output;
 }
 
+//------------------------Check tid til første træning -----------------------------------------------
+const firstTraining = new Date('18 August 2022 19:30');
+let firsTrainingPrim = firstTraining[Symbol.toPrimitive]('number');
+
+
+function tidtiltraening() {
+    let output = Math.abs(dateDiff(todayPrim, firsTrainingPrim));
+    document.getElementById("dagetil").innerHTML = output
+}
+//------------------------Check tid til første fest -----------------------------------------------
+const nextParty = new Date('10 December 2022 19:30');
+let nextPartyPrim = nextParty[Symbol.toPrimitive]('number');
+
+
+function tidtilparty() {
+    let output = Math.abs(dateDiff(todayPrim, nextPartyPrim));
+    document.getElementById("daysparty").innerHTML = output
+}

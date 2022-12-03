@@ -6,33 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>HGF Gymteam</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="footerstyle.css"> 
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <script src="script.js"></script>
     </head>
-<body onload="updateDate();traening()";>
-            <div class="jumbotron text-center">
-                <h1>HGF Gymteam</h1>
-                <small>Vigtigt at vide</small>
+<body onload="updateDate();traening();tidtiltraening();tidtilparty();">
+            <div class="jumbotron text-center";>
+                <div class="container">
+                    <h1 class="title">HGF Gymteam</h1>
+                    <small class="title">Vigtigt at vide</small>
+                    <hr>
+                </div>    
             </div>
-
+<!--style="background-image: url(images/gtimage1.jpg)" -->
 <!--End of header - start of first container-->           
 
          <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-                    <h1>Buffalo Regler</h1>
-                    <p>Hvis man holder en <strong>åben</strong> genstand i højre hånd, og en anden person kalder <i>Buffalo</i>, så skal vedkommende bunde deres genstand</p><br>
-                    <p>Hvis <i>Buffalo</i> bliver kaldt forkert, skal vedkommende der kaldte den selv bunde deres genstand</p>
-                    <p>En <i>Buffalo</i> ophæves hvis en af følgende er opfyldt:</p>
-                        <ul>
-                            <li>Genstanden er lukket</li>
-                            <li>Genstanden står på bordet</li>
-                            <li>Genstanden er tom</li>
-                            <li>Vedkommende har en genstand i begge hænder</li>
-                        </ul>
-                </div>
 
                 <div class="col-sm-4">
                     <h1>Træning i dag?</h1>
@@ -40,6 +35,16 @@
                     <h6 id="nej"></h6>
                     <br>
                 </div>
+
+                
+                <div class="col-sm-4">
+                        <h1>Dage til næste fest</h1>
+                        <br>
+                        <h6 id="daysparty"></h6>
+                    </div>
+
+                
+               
                 <div class="col-sm-4">
                     <h1>Beerpong</h1>
                     <h6>Dage siden Oliver og Lundborg har tabt i beerpong på Charlotteskolen:</h6>
@@ -47,7 +52,8 @@
                     <h6 id="days"></h6>
                     <br>
                 </div>
-              </div>  
+              </div> 
+         </div>  
             <br>
             <br>    
 <!--End of first container-->
@@ -55,22 +61,85 @@
               <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
+                        <h1>Buffalo Regler</h1>
+                        <p>Hvis man holder en <strong>åben</strong> genstand i højre hånd, og en anden person kalder <i>Buffalo</i>, så skal vedkommende bunde deres genstand</p><br>
+                        <p>Hvis <i>Buffalo</i> bliver kaldt forkert, skal vedkommende der kaldte den selv bunde deres genstand</p>
+                        <p>En <i>Buffalo</i> ophæves hvis en af følgende er opfyldt:</p>
+                            <ul>
+                                <li>Genstanden er lukket</li>
+                                <li>Genstanden står på bordet</li>
+                                <li>Genstanden er tom</li>
+                                <li>Vedkommende har en genstand i begge hænder</li>
+                            </ul>
+                    </div>
+                    <div class="col-sm-4">
                         <h1>Vigtige Datoer</h1>
-                      
+                            <ul class="list-group">
+                                <br>
+                        <!--     <li class="list-group-item">18-08-2022 - Første prøvetræning</li> 
+                                <li class="list-group-item">01-09-2022 - Første rigtige træning</li>
+                                <li class="list-group-item">24-09-2022 - Introfest</li>
+                                <li class="list-group-item">29-10-2022 - Introweekend</li> -->
+                                <li class="list-group-item">10-12-2022 - Julefrokost</li>
+                                <li class="list-group-item">XX-XX-2023 - Weekendtræning</li>
+                                <li class="list-group-item">28-01-2023 - Stenbrostævnet</li>
+                                <li class="list-group-item">04-02-2023 - OD Dag</li>
+                                <li class="list-group-item">18-02-2023 - Weekendtræning</li>
+                                <li class="list-group-item">11/12-03-2023 - Roskildedagene</li>
+                                <li class="list-group-item">25-03-2023 - Sorø Opvisningsdage</li>
+                                <li class="list-group-item">XX-XX-2023 - HGF Lokalopvisning</li>
+                                <li class="list-group-item">XX-06-2023 - Gymnastik ved Fjorden, Roskilde</li>
+                            </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1>Dage siden første træning</h1>
+                        <h6 id="dagetil"></h6>
                     </div>
     
-                    <div class="col-sm-4">
-                        <h1>Placeholder</h1>
-                       
-                    </div>
-                    <div class="col-sm-4">
-                        <h1>Placeholder</h1>
-                       
-                    </div>
+                    
+                    
                   </div>  
               
-              
+             
         
-        </div>     
+        </div>    
+        
+        <!--Footer start-->
+
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="row-footer">
+                    <div class="footer-col">
+                        <h4>holdet</h4>
+                        <ul>
+                            <li><a href="omos.html">om os</a></li>
+                            <li><a href="#">billeder</a></li>
+                            <li><a href="#">video</a></li>
+                            <li><a href="#">opvisninger</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>information</h4>
+                        <ul>
+                            <li><a href="https://hedehusenegf.dk/">HGF hjemmeside</a></li>
+                            <li><a href="https://hedehusenegf.dk/hold/opvisning/gymteam.php">kontakt</a></li>
+
+                        </ul>
+                    </div>
+                  
+                    <div class="footer-col">
+                        <h4>følg os</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/events/1578156019246333" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <!--    <a href="#"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.instagram.com/hgfgymteam/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!--    <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+
+       <!--Footer end-->
 </body>
 </html>
