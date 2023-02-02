@@ -46,7 +46,7 @@ function tidtiltraening() {
     document.getElementById("dagetil").innerHTML = output
 }
 //------------------------Check tid til første fest -----------------------------------------------
-const nextParty = new Date('10 December 2022 19:30');
+const nextParty = new Date('18 February 2023 19:30');
 let nextPartyPrim = nextParty[Symbol.toPrimitive]('number');
 
 
