@@ -37,7 +37,7 @@ function traening() {
 }
 
 //------------------------Check tid til første træning -----------------------------------------------
-const firstTraining = new Date('18 August 2022 19:30');
+const firstTraining = new Date('17 August 2023 19:30');
 let firsTrainingPrim = firstTraining[Symbol.toPrimitive]('number');
 
 
@@ -46,7 +46,7 @@ function tidtiltraening() {
     document.getElementById("dagetil").innerHTML = output
 }
 //------------------------Check tid til første fest -----------------------------------------------
-const nextParty = new Date('18 February 2023 19:30');
+const nextParty = new Date('21 October 2023 19:30');
 let nextPartyPrim = nextParty[Symbol.toPrimitive]('number');
 
 
